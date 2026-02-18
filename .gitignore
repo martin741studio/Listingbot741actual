@@ -1,2 +1,7 @@
-agents/main/sessions/
-agents/main/sessions/
+agents/
+*.json.bak*
+*.log
+sessions/
+memory/
+*.sqlite
+identity/device-auth.json
