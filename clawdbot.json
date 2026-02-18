@@ -1,30 +1,25 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.1.24-3",
-    "lastTouchedAt": "2026-02-18T05:03:57.778Z"
+    "lastTouchedAt": "2026-02-18T06:02:36.000Z"
   },
   "wizard": {
-    "lastRunAt": "2026-02-18T05:03:57.772Z",
+    "lastRunAt": "2026-02-18T05:44:16.987Z",
     "lastRunVersion": "2026.1.24-3",
-    "lastRunCommand": "configure",
+    "lastRunCommand": "doctor",
     "lastRunMode": "local"
   },
   "agents": {
     "defaults": {
       "model": {
-        "primary": "google/gemini-2.5-flash"
+        "primary": "google/gemini-3-pro-preview"
       },
-      "compaction": {
-        "mode": "safeguard"
-      },
+      "workspace": "/root/clawd",
       "maxConcurrent": 4,
       "subagents": {
         "maxConcurrent": 8
       }
     }
-  },
-  "messages": {
-    "ackReactionScope": "group-mentions"
   },
   "commands": {
     "native": "auto",
@@ -40,11 +35,16 @@
     }
   },
   "gateway": {
+    "port": 18789,
     "mode": "local",
     "bind": "lan",
     "auth": {
       "mode": "token",
-      "token": "8c54552f325bcc997a5082136abb7c2099e9df1320461860"
+      "token": "527c95f86c859f622a81da8c64434c41ca69bcd16803cce6"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
     }
   },
   "plugins": {
@@ -54,14 +54,14 @@
       }
     }
   },
-  "tools": {
-    "web": {
-      "search": {
-        "enabled": true,
-        "apiKey": "BSAkmEp84fapLTsK9qef3r-S3dSuaE9"
-      },
-      "fetch": {
-        "enabled": true
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "auth": {
+    "profiles": {
+      "google:default": {
+        "provider": "google",
+        "mode": "api_key"
       }
     }
   }

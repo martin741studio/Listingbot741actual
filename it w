@@ -1,0 +1,24 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "google/gemini-2.0-flash"
+      },
+      "workspace": "/root/clawd"
+    }
+  },
+  "google": {
+    "apiKey": "AIzaSyCka3KeounGxfQc7YPB4fW9_gWEpseK9JU"
+  },
+  "channels": {
+    "telegram": {
+      "botToken": "8277928307:AAHVK78yiWKGpgE96uux9bD_nUj3h-DcP98",
+      "enabled": true
+    }
+  },
+  "gateway": {
+    "bind": "lan",
+    "port": 18789,
+    "mode": "local"
+  }
+}

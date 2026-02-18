@@ -3,8 +3,8 @@
     "deviceId": "3ba4cdbe47e0d7afdaccc952d58cf84734e63705ec5085bc9ec536204097a092",
     "publicKey": "Wa2kn1Urx1QPBoBsCgiD1ERt2yRpovDKQV9tRF2A6Hw",
     "platform": "linux",
-    "clientId": "clawdbot-probe",
-    "clientMode": "probe",
+    "clientId": "gateway-client",
+    "clientMode": "backend",
     "role": "operator",
     "roles": [
       "operator"
@@ -25,10 +25,11 @@
           "operator.pairing"
         ],
         "createdAtMs": 1771391020873,
-        "lastUsedAtMs": 1771391037788
+        "lastUsedAtMs": 1771394800229
       }
     },
     "createdAtMs": 1771391020873,
-    "approvedAtMs": 1771391020873
+    "approvedAtMs": 1771391020873,
+    "displayName": "agent"
   }
 }
